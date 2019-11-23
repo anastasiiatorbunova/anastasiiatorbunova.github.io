@@ -1497,10 +1497,13 @@ body.laser .tabcontent > div{
 	.container-equio-info{
 		overflow-x: scroll;
 	}
-	.equipment-infotable{
-		width: 130%;
+	.equipment-infotable>div{
+		width: 33%;
 	}
-	.container-equio-info:after{
+	.equipment-infotable>div:after{
+		right: 10%;
+	}
+	/*.container-equio-info:after{
 		position: absolute;
 		content: "";
 		height: 100%;
@@ -1508,14 +1511,14 @@ body.laser .tabcontent > div{
 		top: 0;
 		right: -1px;
 		background: linear-gradient(to right, transparent, #ffffff);
-	}
+	}*/
 	.tabs-block.without-slider{
 		position: relative;
 		width: 100%;
 		overflow-x: scroll;
 		overflow-y: hidden;
 	}
-	.tabs-block.without-slider:after{
+	/*.tabs-block.without-slider:after{
 		position: absolute;
 		content: "";
 		height: 100%;
@@ -1523,7 +1526,7 @@ body.laser .tabcontent > div{
 		top: 0;
 		right: -1px;
 		background: linear-gradient(to right, transparent, #ffffff);
-	}
+	}*/
 	.tabs-block.without-slider>div{
 		width: 130%;
 	}
@@ -1548,7 +1551,7 @@ body.laser .tabcontent > div{
 		height: 50px;
 		background: linear-gradient(to right bottom, transparent 50%, #212121 50%);
 	}
-		.equipment .tab .slick-current .tablinks:after, .equipment .tab .tablinks.active:after {
+	.equipment .tab .slick-current .tablinks:after, .equipment .tab .tablinks.active:after {
 		background: linear-gradient(to left top, transparent 50%, #e63434 50%);
 	}
 	.equipment .tab .slick-current .tablinks:before, .equipment .tab .tablinks.active:before {
@@ -1561,8 +1564,8 @@ body.laser .tabcontent > div{
 	.tabcontent.tabcontent-table .table-cell{
 		align-items: center;
 	}
-	.equipment-infotable{
-		width: 160%;
+	.equipment-infotable>div {
+		width: 49%;
 	}
 	.tabs-block.without-slider>div{
 		width: 180%;
@@ -1572,9 +1575,6 @@ body.laser .tabcontent > div{
 	}
 }
 @media(max-width:576px){
-	.equipment-infotable {
-		width: 200%;
-	}
 	.tabs-block.without-slider>div{
 		width: 230%;
 	}
@@ -1583,16 +1583,25 @@ body.laser .tabcontent > div{
 	}
 }
 @media(max-width:480px){
-	.equipment-infotable {
-		width: 250%;
-	}
 	.tabs-block.without-slider>div{
 		width: 280%;
 	}
 }
 @media(max-width:380px){
-	.equipment-infotable {
-		width: 300%;
+	.equipment-infotable>div {
+		width: 100%;
+	}
+	.equipment-infotable>div:after{
+		-webkit-transform: skewX(0deg);
+		-ms-transform: skewX(0deg);
+		-o-transform: skew(0deg);
+		transform: skewX(0deg);
+		width: 96%;
+		right: 2%;
+		height: 1px;
+		top: auto;
+		bottom: 0;
+		
 	}
 	.tabs-block.without-slider>div{
 		width: 350%;

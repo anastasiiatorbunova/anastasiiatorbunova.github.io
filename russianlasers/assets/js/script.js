@@ -23,6 +23,7 @@ jQuery('.tab-slider').slick({
 	arrows: false,
 	dots: false,
 	asNavFor: '.tabcontent-slider',
+	focusOnSelect: false,
 	responsive: [
 		{
 			breakpoint:767,
