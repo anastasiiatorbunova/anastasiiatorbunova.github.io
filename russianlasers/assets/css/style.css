@@ -1967,6 +1967,7 @@ body.laser .tabcontent > div{
 .lising .more-link div{
 	color: #1c1c1c;
 	font-weight: 400;
+	z-index: 70;
 }
 .lising .more-link, .lising a.more{
 	width: 200px;
