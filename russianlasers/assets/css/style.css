@@ -366,7 +366,7 @@ header .numeration span#total{
 }
 .equipment .tab .tablinks{
 	display: block;
-	width: 22.5%;
+	/*width: 22.5%;*/
 	text-align: center;
 	float: left;
 	background: #212121;
@@ -1054,6 +1054,7 @@ footer .address{
 	.about{
 		background: #e3e6e9;
 		padding-bottom: 30px;
+		overflow-x: hidden;
 	}
 	.about:before{
 		left: 0;
@@ -1238,9 +1239,9 @@ footer .address{
 		width: 150%;
 	}
 	.about-photo img{
-		height: 100%;
-		width: auto;   
-		margin-left: -30%;
+		height: auto;
+		width: 95%;   
+		margin-left: -10%;
 	}
 }
 @media(max-width: 380px){
