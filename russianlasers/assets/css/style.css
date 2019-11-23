@@ -1788,9 +1788,9 @@ body.laser .tabcontent > div{
 }
 .technology-block .row:not(:first-child) > div:first-child img{
 	max-width: 100%;
-	width: 100%;
-    height: 100%;
-    right: -19%;
+	width: 85%;
+    height: auto;
+    right: -5%;
 	position: absolute;
 	-webkit-transform: skew(30deg);
 	-moz-transform: skew(30deg);
@@ -1802,7 +1802,7 @@ body.laser .tabcontent > div{
 	-moz-transform: skew(-30deg);
 	-o-transform: skew(-30deg);
 	transform: skew(-30deg);
-	left: -19%;
+	left: -5%;
 	right: auto;
 }
 
