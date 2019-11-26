@@ -22,7 +22,7 @@ jQuery('.tab-slider').slick({
 	slidesToScroll: 1,
 	arrows: false,
 	dots: false,
-	asNavFor: '.tabcontent-slider',
+	//asNavFor: '.tabcontent-slider',
 	focusOnSelect: false,
 	responsive: [
 		{
@@ -40,7 +40,7 @@ jQuery('.tab-slider').slick({
 	]
 });
 
-jQuery('.tabcontent-slider').slick({
+/*jQuery('.tabcontent-slider').slick({
 	infinite: true,
 	slidesToShow: 1,
 	slidesToScroll: 1,
@@ -50,7 +50,7 @@ jQuery('.tabcontent-slider').slick({
 	fade: true,
 	cssEase: 'linear',
 	asNavFor: '.tab-slider,.tabcontent-slider'
-});
+});*/
 
 jQuery('.tabcontent-slider-main-page').slick({
 	infinite: true,
