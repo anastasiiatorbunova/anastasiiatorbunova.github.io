@@ -211,6 +211,15 @@
 
     text-align: center;
 }
+.tabcontent-slider-main-page .slick-dots{
+	bottom: -60px;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tabcontent-slider-main-page .slick-dots ul li:before{
+	content: none;
+}
 .slick-dots li
 {
     position: relative;
@@ -273,6 +282,10 @@
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+.tabcontent-slider-main-page .slick-dots li button:before{
+	color: rgb(230, 52, 52);
+	font-size: 9px;
 }
 .slick-dots li.slick-active button:before
 {

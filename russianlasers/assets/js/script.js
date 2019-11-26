@@ -40,7 +40,7 @@ jQuery('.tab-slider').slick({
 	]
 });
 
-/*jQuery('.tabcontent-slider').slick({
+jQuery('.tabcontent-slider').slick({
 	infinite: true,
 	slidesToShow: 1,
 	slidesToScroll: 1,
@@ -50,7 +50,7 @@ jQuery('.tab-slider').slick({
 	fade: true,
 	cssEase: 'linear',
 	asNavFor: '.tab-slider,.tabcontent-slider'
-});*/
+});
 
 jQuery('.tabcontent-slider-main-page').slick({
 	infinite: true,
