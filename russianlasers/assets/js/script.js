@@ -52,6 +52,10 @@ jQuery('.tabcontent-slider').slick({
 	asNavFor: '.tab-slider,.tabcontent-slider'
 });
 
+jQuery('.main-page .tabcontent-slider').slick({
+	dots: true
+});
+
 function openCity(evt, cityName) {
 	var i, tabcontent, tablinks;
 	tabcontent = document.getElementsByClassName("tabcontent-table");
