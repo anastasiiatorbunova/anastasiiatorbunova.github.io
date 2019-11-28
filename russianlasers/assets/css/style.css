@@ -63,7 +63,7 @@ ul li:before{
     font-size: 18px;
     margin-right: 15px;
 }
-.slick-dots ul li:before{
+ul.slick-dots li:before{
 	content: none;
 }
 p{

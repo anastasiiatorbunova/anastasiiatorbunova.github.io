@@ -211,6 +211,9 @@
 
     text-align: center;
 }
+ul.slick-dots li:before{
+	content: none;
+}
 .tabcontent-slider-main-page .slick-dots{
 	bottom: -60px;
 	display: flex;
