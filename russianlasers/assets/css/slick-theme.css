@@ -217,9 +217,7 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-.tabcontent-slider-main-page .slick-dots ul li:before{
-	content: none;
-}
+
 .slick-dots li
 {
     position: relative;
@@ -291,4 +289,7 @@
 {
     opacity: .75;
     color: black;
+}
+.tabcontent-slider-main-page .slick-dots li.slick-active button:before{
+	color: rgb(230, 52, 52);
 }
