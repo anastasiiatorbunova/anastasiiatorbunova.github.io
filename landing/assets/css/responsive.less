@@ -1,0 +1,357 @@
+@media(max-width: 1400px){
+    .agenda-block {
+        .spec-back-agenda{
+            &:before{
+                left: -70px;
+            }
+            &:after{
+                right: ~"calc(50% - 50vw)";
+            }
+        }
+    }
+}
+@media(max-width: 1200px){
+    header {
+        .hero-title {
+            margin-bottom: 50px;
+        }
+        .logo-block {
+            p{
+                margin-top: 50px;
+            }
+        }
+        .scroll-button{
+            a {
+                width: 90px;
+            }
+        }
+    }
+    .info-section {
+        padding: 80px 0 60px;
+        p{
+            font-size: 18px;
+            line-height: 28px;
+            margin-bottom: 25px;
+        }
+    }
+    .benefits-section {
+        padding: 70px 0 50px;
+        .reasons-block {
+            padding-bottom: 45px;
+            .spec-back-first{
+                &:before{
+                    height: 80%;
+                }
+            }
+            .reasons-list{
+                padding: 40px 35px 40px 40px;
+                &:after{
+                    content: none;
+                }
+                .reason-item {
+                    h4{
+                        font-size: 26px;
+                        margin-bottom: 20px;
+                    }
+                    p{
+                        
+                    }
+                    .item-icon {
+                        min-width: 80px;
+                        margin-right: 40px;
+                    }
+                }
+            }
+            .register-button{
+                a {
+                    width: 500px;
+                    font-size: 24px;
+                }
+            }
+        }
+        .learn-block {
+            .skill-item {
+                .skill-img{
+                    min-height: 90px;
+                    max-height: 90px;
+                    img{
+                        max-height: 90px;
+                    }
+                }
+            }
+        }
+    }
+    .agenda-block{
+        padding: 55px 0 170px;
+        .spec-back-agenda{
+            &:before{
+                left: -20px;
+            }
+        }
+        .agenda-item {
+            .agenda-item-container {
+                .ag-date{
+                    h5{
+                        font-size: 22px;
+                    }
+                }
+                .ag-name {
+                    p{
+                        font-size: 26px;
+                    }
+                }
+                .ag-cat {
+                    .cat-item
+                    {
+                       height: 60px; 
+                    }
+                }
+            }
+        }
+    }
+    .location-block {
+        padding: 30px 0 50px;
+        
+        a{
+            font-size: 22px;
+            line-height: 26px;
+        }
+        .location-spec-back {
+            padding-top: 25px;
+        }
+    }
+    .registration-block {
+        padding: 45px 0 50px;
+        .registr-form-container {
+            label{
+                font-size: 20px;
+            }
+            input{
+                &[type=submit]{
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 992px){
+    body {
+        h2{
+            font-size: 35px;
+            line-height: 40px;
+            br{
+                display: none;
+            }
+        }
+        .custom-col-12 {
+            flex: 0 0 auto;
+            width: 100%;
+            position: relative;
+            z-index: 1;
+        }
+    }
+    header {
+        .logo-block {
+            p{
+                font-size: 22px;
+            }
+        }
+    }
+    .benefits-section {
+        .reasons-block {
+            padding-bottom: 55px;
+            .spec-back-first{
+                &:before{
+                    top: 150px;
+                }
+            }
+            .reasons-list {
+                margin-top: 50px;
+            }
+            .image-block{
+                display: none;
+            }
+            .register-button {
+                margin-top: 40px;
+                a{
+                    &:hover {
+                        background-color: #006ecc;
+                        color: #fff;
+                        letter-spacing: 6px;
+                        border-color: transparent;
+                    }
+                }
+            }
+        }
+        .learn-block {
+            padding-bottom: 95px;
+            .skill-item {
+                .skill-name {
+                    h4 {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+    .agenda-block {
+        padding: 55px 0 130px;
+        .spec-back-agenda {
+            margin-top: 50px;
+            &:before{
+                left: 0px;
+                height: 98%;
+            }
+        }
+        .agenda-item {
+            &:not(:last-child){
+                margin-bottom: 40px;
+            }
+            .agenda-item-container {
+                .ag-desc {
+                    p{
+                        font-size: 18px;
+                    }
+                    #readMoreBTN {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .location-block {
+        a{
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+    .registration-block {
+        padding: 45px 0 20px;
+        .registr-form-container {
+            input {
+                height: 65px;
+                &[type=submit]{
+                    margin-top: 30px;
+                    &:hover {
+                        background-color: #006ecc;
+                        color: #fff;
+                        letter-spacing: 6px;
+                        border-color: transparent;
+                    }
+                }
+            }
+            label{
+                &.container{
+                    &:last-child{
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        height: 50px;
+        p {
+            font-size: 18px;
+        }
+    }
+}
+
+@media(max-width: 768px){
+    .benefits-section {
+        .reasons-block {
+            .reasons-list {
+                .reason-item {
+                    h4{
+                        font-size: 22px;
+                    }
+                    p{
+                        font-size: 18px;
+                    }
+                    &:not(:last-child){
+                        margin-bottom: 40px;
+                    }
+                }
+            }
+            .register-button {
+                a {
+                    height: 70px;
+                    font-size: 18px;
+                    width: 100%;
+                }
+            }
+        }
+        
+        .learn-block{
+            padding-top: 25px;
+            .spec-back-second{
+                &:before{
+                    right: 50%;
+                }
+            }
+        }
+    }
+    .agenda-block {
+        .spec-back-agenda{
+            &:before{
+                left: -30px;
+            }
+        }
+    }
+    .location-block {
+        .location-spec-back{
+            &:after{
+                height: 150px;
+            }
+        }
+    }
+    .registration-block {
+        .registr-form-container {
+            label{
+                &.container{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 480px){
+    .benefits-section {
+        .reasons-block {
+            .reasons-list {
+                .reason-item{
+                    display: block;
+                    .item-icon{
+                        width: 100%;
+                        margin: 0;
+                        margin-bottom: 15px;
+                        text-align: center;
+                        img {
+                            max-height: 80px;
+                        }
+                    }
+                    .reason-desc{
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    .registration-block {
+        .registr-form-container {
+            input{
+                &[type=submit]{
+                    font-size: 18px;
+                    height: 70px;
+                }
+            }
+            textarea {
+                height: 200px;
+            }
+        }
+    }
+}
+

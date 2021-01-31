@@ -1,0 +1,732 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url("fonts/Poppins-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url("fonts/Poppins-Thin.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url("fonts/Poppins-Light.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url("fonts/Poppins-Medium.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url("fonts/Poppins-SemiBold.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url("fonts/Poppins-Bold.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: 700;
+}
+body{
+    font-family: 'Poppins';
+    cursor: default;
+    strong{
+        font-weight: 600;
+    }
+    p{
+        margin: 0;
+    }
+    img{
+        max-width: 100%;
+    }
+    a{
+        text-decoration: none;
+        cursor: pointer;
+    }
+    h2{
+        font-size: 55px;
+        line-height: 60px;
+        color: #222222;
+        font-weight: 300;
+        position: relative;
+        letter-spacing: -3px;
+        &:after{
+            position: absolute;
+            content: '';
+            width: 280px;
+            height: 1px;
+            background-color: #ed1c24;
+            left:0;
+            bottom: -22px;
+        }
+        span{
+            font-weight: 600;
+            color: #006ecc;
+            letter-spacing: -2px;
+        }
+    }
+    .custom-col-xl-4 {
+        flex: 0 0 auto;
+        width: 37.3333333333%;
+        position: relative;
+        z-index: 1;
+    }
+    .custom-col-xl-8 {
+        flex: 0 0 auto;
+        width: 62.6666666667%;
+        position: relative;
+        z-index: 1;
+    }
+}
+//Animation
+@keyframes scrollHover {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(13px); }
+    100% { transform: translateY(0); }
+}
+@keyframes readMoreHover {
+    0% { width: 0%; }
+    100% { width: 100%; }
+}
+
+//Header section
+header {
+    width: 100%;
+    background-image: url('../img/JNJ-landingpage-hero-image.jpg');
+    padding-top: 33px;
+    padding-bottom: 45px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    
+    p{
+        text-transform: uppercase;
+        color: #fff;
+    }
+    
+    .social-links-nav {
+        margin-bottom: 48px;
+        
+        a {
+            float: left;
+            display: block;
+            margin: 0 15px 0;
+            transform: scale(1);
+            transition: transform 0.5s;
+            
+            &:hover{
+                transform: scale(1.3);
+                transition: transform 0.5s;
+            }
+        }
+    }
+    
+    .hero-title {
+        margin-bottom: 80px;
+        
+//        .hero-logo-container {
+//            position: relative;
+//            display: inline-flex;
+//            align-items: center;
+//            
+//            h5{
+//                color: #fff;
+//                margin: 0;
+//            }
+//            p{
+//                
+//            }
+//        }
+    }
+    
+    .logo-block {
+        p{
+            font-size: 26px;
+            line-height: 28px;
+            font-weight: 300;
+            letter-spacing: 2.5px;
+            text-align: center;
+            margin-top: 87px;
+        }
+    }
+    
+    .scroll-button {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        text-align: center;
+        a{
+            display: block;
+            float: left;
+            &:hover {
+                animation: scrollHover 1s infinite;
+            }
+        }
+    }
+}
+
+//Info section
+.info-section {
+    background-color: #fff;
+    padding: 108px 0 73px;
+    
+    .info-title-container {
+        margin-bottom: 68px;    
+        text-align: center;
+//        display: block;
+//        position: relative;
+//        width: 100%;
+//        height: 184px;
+//        h2{
+//            position: relative;
+//            z-index: 1;
+//            color: #f01c28;
+//            font-size: 100px;
+//            font-weight: 100;
+//        }
+//        .info-title-container{
+//            position: relative;
+//            width: 100%;
+//            height: 184px;
+//            border: 4px solid #0256ae;
+//        }
+//        &:before{
+//            display: block;
+//            position: absolute;
+//            content: "";
+//            top: 22px;
+//            right: 22px;
+//            width: 100%;
+//            height: 100%;
+//            background-color: #ffebec;
+//        }
+//        &:after{
+//            display: block;
+//            position: absolute;
+//            content: "";
+//            top: 25px;
+//            right: 22px;
+//            width: 100%;
+//            height: 100%;
+//            background-image: url("../img/jnj-dots-pattern.png");
+//            background-repeat: repeat;
+//        }
+    }
+    p{
+        color: #303030;
+        font-size: 23px;
+        line-height: 36px;
+        margin-bottom: 35px;
+        text-align: center;
+        letter-spacing: 0px;
+        span{
+            color: #006ecc;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+    }
+}
+
+//Benefits section
+.benefits-section{
+    position: relative;
+    background-color: #f7f7f7;
+    overflow: hidden;
+    padding: 100px 0 70px;
+    &:before{
+        position: relative;
+        content: '';
+        width: 100%;
+       
+    }
+    .reasons-block{
+        padding-bottom: 55px;
+        overflow: hidden;
+        .spec-back-first{
+            position: relative;
+            
+            &:before{
+                position: absolute;
+                content: '';
+                width: 1126px;
+                height: 1030px;
+                top: 220px;
+                left: 230px;
+                background-color: #fce8e9;
+            }
+            &:after{
+                position: absolute;
+                content: '';
+                width: 100vw;
+                height: 100%;
+                left: ~"calc(50% - 50vw)";
+                top: 120px;
+                background-image: url("../img/jnj-dots-pattern.png");
+                background-repeat: repeat;
+            }
+        }
+        .image-block {
+            margin-top: 66px;
+        }
+        .reasons-list {
+            background-color: #ed1c24;
+            padding: 40px 15px 40px 75px;
+            margin-top: 30px;
+            position: relative;
+            
+            &:after{
+                position: absolute;
+                content: '';
+                display: block;
+                height: 100%;
+                width: 55px;
+                top: 0;
+                right: -54px;
+                z-index: 1;
+                background-color: #ed1c24;
+            }
+            
+            .reason-item{
+                display: flex;
+                align-items: center;
+                &:not(:last-child){
+                    margin-bottom: 35px;
+                }
+                
+                .reason-desc {
+                    margin: auto;
+                }
+                
+                .item-icon {
+                    margin-right: 60px;
+                    float: left;
+                    min-width: 140px;
+                }
+                h4{
+                    color: #fff;
+                    font-size: 29px;
+                    margin-bottom: 30px;
+                }
+                p{
+                    color: #fff;
+                    font-size: 21px;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+        .register-button {
+            margin-top: 100px;
+            position: relative;
+            z-index: 1;
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 615px;
+                height: 95px;
+                background-color: #006ecc;
+                color: #fff;
+                text-transform: uppercase;
+                font-size: 30px;
+                font-weight: 300;
+                letter-spacing: 6px;
+                transition: 0.5s;
+                border: 4px solid transparent;
+                margin: auto;
+                span{
+                    font-weight: 500;
+                }
+                &:hover{
+                    transition: 0.5s;
+                    background-color: #f7f7f7;
+                    color: #006ecc;
+                    border: 3px solid #006ecc;
+                    letter-spacing: 8px;
+                }
+            }
+        }
+    }
+    .learn-block{
+        padding-top: 40px;
+        padding-bottom: 130px;
+        overflow: hidden;
+        .spec-back-second {
+            position: relative;
+            > div{
+                position: relative;
+                z-index: 1;
+            }
+            &:before {
+                position: absolute;
+                content: '';
+                height: ~"calc(100% - 50px)";
+                width: 100vw;
+                right: 33.33333%;
+                top: 120px;
+                background-color: #fce8e9;
+            }
+            &:after {
+                position: absolute;
+                content: '';
+                width: 100vw;
+                height: ~"calc(100% + 160px)";
+                left: ~"calc(50% - 50vw)";
+                top: -30px;
+                background-image: url("../img/jnj-dots-pattern.png");
+                background-repeat: repeat;
+            }
+        }
+        
+        h2{
+            margin-bottom: 70px;
+        }
+        .skill-item {
+            margin-top: 40px;
+            .skill-img {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 20px;
+                min-height: 118px;
+                max-height: 118px;
+            }
+            .skill-name {
+                text-align: center;
+                h4{
+                    margin-bottom: 0;
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+//Agenda block
+.agenda-block {
+    background-color: #fff;
+    padding: 75px 0 280px;
+    overflow: hidden;
+    
+    .spec-back-agenda{
+        position: relative;
+        margin-top: 70px;
+        
+        &:before{
+            position: absolute;
+            content: '';
+            height: 100%;
+            width: 150vw;
+            left: -220px;
+            top: 125px;
+            background-color: #fce8e9;
+        }
+        &:after{
+            position: absolute;
+            content: '';
+            width: 100vw;
+            height: ~"calc(100% + 740px)";
+            right: -135px;
+            top: 60px;
+            background-image: url("../img/jnj-dots-pattern.png");
+            background-repeat: repeat;
+        }
+    }
+    
+    .agenda-item {
+        //margin-bottom: 80px;
+        z-index: 1;
+        
+        .agenda-item-container {
+            justify-content: center;
+            height: 100%;
+            background-color: #ed1c24;
+            padding: 40px 25px 50px;
+            
+            p, h5{
+                color: #fff;
+                text-align: center;
+            }
+            .ag-date {
+                h5{
+                    font-size: 30px;
+                    font-weight: 500;
+                }
+            }
+            .ag-img {
+                text-align: center;
+                margin-top: 35px;
+            }
+            .ag-name {
+                margin-top: 38px;
+                p{
+                   font-size: 29px;
+                    line-height: 30px; 
+                }
+            }
+            .ag-cat {
+                margin-top: 30px;
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: space-around;
+                .cat-item {
+                    height: 70px;
+                    img {
+                        max-height: 100%;
+                    }
+                }
+            }
+            .ag-desc {
+                margin-top: 28px;    
+                text-align: center;
+                p{
+                    font-size: 17px;
+                    line-height: 26px;
+                    font-weight: 300;
+                }
+                #readMoreBTN{
+                    color: #fff;
+                    font-weight: 600;
+                    position: relative;
+                    &:after {
+                        position: absolute;
+                        content: "";
+                        width: 100%;
+                        height: 1px;
+                        bottom: 0;
+                        left: 0;
+                        background-color: #fff;
+                    }
+                    &:hover {
+                        &:after {
+                            animation: readMoreHover 1s;
+                        }
+                    }
+                }
+            }
+        }
+        &:nth-child(even){
+            .agenda-item-container{
+                background-color: #006ecc;
+            }
+        }
+    }
+}
+
+//Location block
+.location-block {
+    background-color: #fff;
+    padding: 45px 0 87px;
+    overflow: hidden;
+    
+    .location-spec-back {
+        position: relative;
+        margin-top: 30px;
+        padding-top: 45px;
+        .loc-img {
+            margin-bottom: 35px;
+        }
+        >div{
+            position: relative;
+            z-index: 1;
+        }
+        &:before{
+            position: absolute;
+            content: "";
+            height: 100%;
+            width: 57%;
+            right: -5px;
+            top: -50px;
+            background-color: #fce8e9;
+        }
+        &:after{
+            position: absolute;
+            content: "";
+            width: 100vw;
+            height: 260px;
+            left: 49%;
+            top: 90px;
+            background-image: url("../img/jnj-dots-pattern.png");
+            background-repeat: repeat;
+            z-index: 2;
+        }
+    }
+    .quest-block{
+        margin-top: 40px;
+    }
+    h3{
+        color: #ed1c24;
+        font-weight: 400;
+        letter-spacing: 0px;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 17px;
+        letter-spacing: 0px;
+    }
+    a{
+        color:  #006ecc;
+        font-size: 24px;
+        line-height: 28px;    
+        font-weight: 500; 
+    }
+}
+
+//Registration block
+.registration-block {
+    background-image: url("../img/JNJ-landingpage-registration-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 75px 0 80px;
+    color: #fff;
+    h2 {
+        color: #fff;
+        margin-bottom: 65px;
+        &:after{
+            background-color: #fff;
+        }
+    }
+    p{
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0px;
+        font-weight: 300;
+    }
+    .registr-form-container {
+        margin-top: 23px;
+        
+        label{
+            //display: none;
+            margin-bottom: 15px;
+            font-size: 23px;
+            font-weight: 300;
+            
+            &.container{
+                font-size: 17px;
+                line-height: 30px;
+                position: relative;    
+                padding-left: 50px;
+                margin: 0 0 8px;
+                
+                input {
+                    position: absolute;
+                    opacity: 0;
+                    cursor: pointer;
+                    width: 0px;
+                    height: 0px;
+                    
+                    &:checked ~ .checkmark:after {
+                        display: block;
+                    }
+                    &:checked ~ .checkmark{
+                        background-color: #fff;
+                    }
+                }
+                
+                .checkmark{
+                    position: absolute;
+                    top: 8px;
+                    left: 8px;
+                    height: 15px;
+                    width: 15px;
+                    border-radius: 50%;
+                    
+                    &:after{
+                        content: '';
+                        position: absolute;
+                        bottom: -50%;
+                        left: -50%;
+                        border-radius: 50%;
+                        height: 30px;
+                        width: 30px;
+                        border: 2px solid #fff;
+                    }
+                }
+            }
+        }
+        input{
+            height: 85px;
+            background-color: #fff;
+            border-radius: 5px;
+            border: none;
+            width: 100%;
+            padding: 0 20px 0;
+            color: #212121;
+            font-size: 18px;
+            outline:none;
+            margin-bottom: 30px;
+            
+            &[type=submit]{
+                background-color: #006ecc;
+                font-size: 36px;
+                color: #fff;
+                font-weight: 400;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                border-radius: 0px;
+                transition: 0.5s;
+                margin-top: 55px;
+                
+                &:hover{
+                    transition: 0.5s;
+                    background-color: #f7f7f7;
+                    color: #006ecc;
+                    border: 3px solid #006ecc;
+                    letter-spacing: 8px;
+                }
+            }
+            
+            &:hover,
+            &:focus{
+                border: none;
+                border-color: transparent;
+            }
+            
+            &::-webkit-input-placeholder,
+            &::-moz-placeholder,
+            &:-ms-input-placeholder,
+            &:-moz-placeholder {
+                color: #a5a6ab;
+            }
+            &:-webkit-autofill {
+                background-color: #fff;
+            }
+        }
+        textarea {
+            resize: none;
+            background-color: #fff;
+            border-radius: 5px;
+            border: none;
+            width: 100%;
+            height: 135px;
+            padding: 20px;
+            color: #212121;
+            font-size: 18px;
+            outline:none;
+        }
+    }
+}
+
+
+//Footer
+footer{
+    display: flex;
+    align-items: center;
+    height: 35px;
+    background-color: #006ecc;
+    p{
+        color: #fff;
+        font-size: 11px;
+        letter-spacing: 0px;
+        text-align: center;
+        font-weight: 300;
+    }
+}
+
