@@ -127,6 +127,7 @@
                 font-size: 20px;
             }
             input{
+                height: 70px;
                 &[type=submit]{
                     font-size: 26px;
                 }
@@ -224,6 +225,9 @@
         a{
             font-size: 20px;
             line-height: 24px;
+            &:hover {
+                color: #006ecc;
+            }
         }
     }
     .registration-block {
@@ -318,6 +322,20 @@
 }
 
 @media(max-width: 480px){
+    body{
+        h2{
+            &:after{
+                width: 150px;
+            }
+        }
+    }
+    .info-section {
+        padding: 50px 0 30px;
+        p{
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
     .benefits-section {
         .reasons-block {
             .reasons-list {
@@ -338,6 +356,53 @@
                     }
                 }
             }
+            .skill-item {
+                margin-top: 20px;
+                .skill-img {
+                    min-height: 70px;
+                    max-height: 70px;
+                    img {
+                        max-height: 70px;
+                    }
+                }
+                .skill-name {
+                    h4 {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+    .agenda-block {
+        .agenda-item {
+            .agenda-item-container{
+                padding: 20px;
+                .ag-img{
+                    margin-top: 20px;
+                }
+                .ag-name{
+                    margin-top: 20px;
+                }
+                .ag-cat{
+                    margin-top: 20px;
+                }
+                .ag-desc{
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+    .location-block {
+        h3{
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        p{
+            font-size: 12px;
+        }
+        a{
+            font-size: 15px;
+            line-height: 20px;
         }
     }
     .registration-block {
